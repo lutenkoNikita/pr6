@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/canvas.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+   <script defer src="assets/js/all.js"></script>
+   <script src="assets/js/canvas.js"></script>
+	<script>
+	window.onload = function()
+	{
+		canvas('#draw', {
+			width: 500,
+			height: 300,
+			strokeWidth: 5,
+			strokeColor: "#000"})
+	}
+</script>
+</head>
+<body>
+
+<header class="header">
+<img src="public/images/logo.png" height="40px">
+</header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Canvas</h1>
+           <p></p>
+       </article>
+	   <canvas id="draw"></canvas>
+	   <div class="toolbar" id="toolbar">
+			<button class="btn" id="save"><i class="fas fa-save"></i></button>
+			<button class="btn" id="local"><i class="fas fa-boxes"></i></button> 
+			<button class="btn" id="restore"><i class="fas fa-trash-restore"></i></button> 
+			<button class="btn" id="time1"><i class="fas fa-business-time"></i></button>
+			<input  type="color" id="color-picker" />
+			<input type="text" id="txt">
+			<input type="text" id="img">
+		</div>
+
+   </main>
+   <nav class="left column">
+       <h3>Left heading</h3>
+       	<ul>
+           <li><a href="index.html" target="_blank">Header</a></li>
+		   <li><a href="contact.html" target="_blank">Contact</a></li>
+		   <li><a href="about.html" target="_blank">About</a></li>
+		   <li><a href="slider.html" target="_blank">Slider</a></li>
+		   <li><a href="media.html" target="_blank">Media</a></li>
+		   <li><a href="table.html" target="_blank">Table</a></li>
+       </ul> 
+      <!-- <h3>Left heading</h3>
+       <ul>
+           <li><a href="#">Link 1</a></li>
+       </ul> -->
+	   
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"><img src="public/images/logo.png
+          " style="height: 40px;">  </footer>
+</div>
+</body>
+</html>
